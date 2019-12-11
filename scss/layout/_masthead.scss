@@ -1,0 +1,45 @@
+.masthead {
+  padding-top: calc(6rem + 74px);
+  padding-bottom: 6rem;
+  .masthead-heading {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+    position: relative;
+    z-index: 2;
+    margin-top: 30%;
+  }
+  .masthead-subheading {
+    font-size: 1.25rem;
+    position: relative;
+    z-index: 2;
+    top: 75%;
+    margin-top: 0;
+  }
+  .masthead-avatar {
+    width: 18rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .masthead {
+    padding-top: calc(6rem + 104px);
+    padding-bottom: 6rem;
+    .masthead-heading {
+      font-size: 4rem;
+      line-height: 3.5rem;
+    }
+    .masthead-subheading {
+      font-size: 1.5rem;
+    }
+    
+  }
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
