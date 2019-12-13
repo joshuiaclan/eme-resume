@@ -1,9 +1,21 @@
+@function SetColor($color){
+
+  @if(lightness($color) > 40) {
+    @return #fff;
+  }
+  @else {
+    @return #000;
+  }
+}
+
 .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
+  
   .masthead-heading {
     font-size: 2rem;
     line-height: 2rem;
+    // color: SetColor(#1abc9c);
   }
   .masthead-subheading {
     font-size: 1.25rem;
